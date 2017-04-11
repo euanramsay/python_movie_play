@@ -2,7 +2,7 @@ import json
 import requests
 
 def get_film_data(film_title):
-
+	# sends request to OMDb API to get film data
 	omdb_request = requests.get('http://www.omdbapi.com/?t=' + film_title)
 	
 	film_data = json.loads(omdb_request.text)
@@ -11,7 +11,7 @@ def get_film_data(film_title):
 	storyline = film_data['Plot']
 	poster = film_data['Poster']
 
-
+	# sends request to search YouTube API based on film title
 	API_KEY = 'AIzaSyBUYgsqikPPzNpli9IrZbi1Ge9cfoaJ0IQ'
 
 	youtube_request = requests.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&key=' + API_KEY + '&q='+ film_title + ' trailer')
@@ -21,6 +21,6 @@ def get_film_data(film_title):
 	youtube_url = 'https://www.youtube.com/watch?v=' + data['items'][0]['id']['videoId']
 
 	film_data = [title, storyline, poster, youtube_url]
-
+	# returns array containing film data
 	return film_data
 
