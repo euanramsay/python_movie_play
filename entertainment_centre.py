@@ -14,4 +14,11 @@ avatar = media.Movie("Avatar",
 
 print (avatar.storyline)
 
-avatar.show_trailer()
+# avatar.show_trailer()
+
+goodfellas = media.Movie("Goodfellas",
+	"A life in the mob",
+	"https://en.wikipedia.org/wiki/File:Goodfellas.jpg",
+	"https://www.youtube.com/watch?v=2ilzidi_J8Q")
+
+goodfellas.show_trailer()
