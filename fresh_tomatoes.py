@@ -18,6 +18,7 @@ main_page_head = '''
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
+            background-color: #ECDBA7;
             padding-top: 80px;
         }
         #trailer .modal-dialog {
@@ -107,7 +108,7 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">Euan's Favorite Movie Trailers</a>
           </div>
         </div>
       </div>
