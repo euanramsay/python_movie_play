@@ -7,7 +7,7 @@ buffalo_66 = media.Movie("Buffalo 66",
 	"https://www.youtube.com/watch?v=1duitd-N1Us")
 
 breathless = media.Movie("Breathless",
-	"A marine on an alien planet",
+	"An American girl in Paris in the 60s",
 	"https://upload.wikimedia.org/wikipedia/en/3/3f/%C3%80_bout_de_souffle_%28movie_poster%29.jpg",
 	"https://www.youtube.com/watch?v=WCDEAu4R8hA")
 
