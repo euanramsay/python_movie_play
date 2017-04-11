@@ -1,17 +1,17 @@
 import fresh_tomatoes
 import media
 
-toy_story = media.Movie("Toy Story", 
-	"A story of a boy and his toys that come to life", 
-	"http://upload.wikimedia.org/wikipedia/en/1/13/Toy_Story.jpg", 
-	"https://www.youtube.com/watch?v=vwyZH85NQC4")
+buffalo_66 = media.Movie("Buffalo 66", 
+	"An ex-con and a girl", 
+	"https://upload.wikimedia.org/wikipedia/en/b/b9/Buffalo_sixty_six_ver1.jpg", 
+	"https://www.youtube.com/watch?v=1duitd-N1Us")
 
 # print(toy_story.storyline)
 
-avatar = media.Movie("Avatar",
+breathless = media.Movie("Breathless",
 	"A marine on an alien planet",
-	"http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
-	"http://www.youtube.com/watch?v=-9ceBgWV8io")
+	"https://upload.wikimedia.org/wikipedia/en/3/3f/%C3%80_bout_de_souffle_%28movie_poster%29.jpg",
+	"https://www.youtube.com/watch?v=WCDEAu4R8hA")
 
 # print (avatar.storyline)
 
@@ -44,6 +44,6 @@ indiana_jones = media.Movie("Indiana Jones and the Last Crusade",
 	"https://upload.wikimedia.org/wikipedia/en/f/fc/Indiana_Jones_and_the_Last_Crusade_A.jpg",
 	"https://www.youtube.com/watch?v=a6JB2suJYHM")
 
-movies = [toy_story, avatar, goodfellas, midnight_in_paris, dirty_rotten_scoundrels, uncle_buck, indiana_jones]
+movies = [buffalo_66, breathless, goodfellas, midnight_in_paris, dirty_rotten_scoundrels, uncle_buck, indiana_jones]
 
 fresh_tomatoes.open_movies_page(movies)
