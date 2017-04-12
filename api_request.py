@@ -16,11 +16,14 @@ def get_film_data(film_title):
 
 	youtube_request = requests.get('https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&key=' + API_KEY + '&q='+ film_title + ' trailer')
 
-	data = json.loads(youtube_request.text)
+	trailer_data = json.loads(youtube_request.text)
 
-	youtube_url = 'https://www.youtube.com/watch?v=' + data['items'][0]['id']['videoId']
+	# creates full youtube url
+	youtube_url = 'https://www.youtube.com/watch?v=' + trailer_data['items'][0]['id']['videoId']
 
+	# puts all data for a single film in an array
 	film_data = [title, storyline, poster, youtube_url]
+	
 	# returns array containing film data
 	return film_data
 
