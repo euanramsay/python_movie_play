@@ -6,7 +6,7 @@ This program displays a screen showing the poster and title of my favorite movie
 
 The program is started by running entertainment_centre.py
 
-## Editing film list
+### Editing film list
 
 The list of films displayed can be easliy changed by editing the array `films` within entertainment_centre.py
 
