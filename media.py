@@ -2,7 +2,7 @@ import webbrowser
 
 class Movie():
 	def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
-		"""Creates an instance of Movie
+		"""Template of an instance of Movie
 
 		Args:
 			movie_title (str): The title of the movie
